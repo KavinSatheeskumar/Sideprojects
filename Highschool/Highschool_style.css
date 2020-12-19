@@ -1,0 +1,36 @@
+html{
+	height:100%;
+}
+body{
+	background-color:#000;
+	margin:0px;
+	text-align:center;
+	height:100%;
+}
+canvas{
+	position:fixed;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+#title{
+	color:white;
+	margin:0px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+#menu{
+	background-color:#550055;
+	width:20%;
+	height:100%;
+	margin:0px;
+	font-family:"Agency FB";
+}
+#menu_items td{
+	padding:10px;
+}
+#menu_items{
+	width:100%;
+}
+td{
+	color:white;
+}
