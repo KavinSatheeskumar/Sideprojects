@@ -2,8 +2,8 @@ var canvas = document.querySelector('canvas');
 
 var scale_constant = 20;
 var fade_num = 30;
-var start_colour = [150,0,200];
-var end_colour = [0,0,0];
+var start_colour = [255,0,255];
+var end_colour = [85,0,85];
 var dot_num = 6;
 var spin_radius = parseInt((innerHeight + innerWidth)/(scale_constant)) * (1/10);
 var dot_radius = parseInt((innerHeight + innerWidth)/(scale_constant)) * (1/50);
@@ -21,9 +21,9 @@ window.addEventListener('resize',
 		dot_radius = parseInt((innerHeight + innerWidth)/(scale_constant)) * (1/50);
 });
 
-window.addEventListener('wheel',
+window.addEventListener('scroll',
 	function(event){
-		angle = ((event.deltaY/125) * (Math.PI/180) * 10 + fade[0]);
+		angle = ((window.scrollY/125) * (Math.PI/180) * 10);
 });
 
 var angle = 0
