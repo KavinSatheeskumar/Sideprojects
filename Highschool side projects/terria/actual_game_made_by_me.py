@@ -176,7 +176,7 @@ def gameloop():
                         block_map[x][y]=5
 
                 backdate(x,y)
-        pygame.display.update()
+        pygame.display.flip()
 
         screen.blit(f_background,(0,0))
         write(instring,50,20,40,20,"freesansbold.ttf",10,(0,0,0))
