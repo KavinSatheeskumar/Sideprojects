@@ -11,7 +11,7 @@ function slide(elemID, delay){
 }
 
 document.getElementById("Button1").onclick = function() {slide('Electron Levels',500)};
-document.getElementById("Button2").onclick = function() {slide('A Wierd Map on the Complex Plane',500)};
+document.getElementById("Button2").onclick = function() {slide('A Weird Map on the Complex Plane',500)};
 document.getElementById("Button3").onclick = function() {slide('Charges in a box',500)};
 document.getElementById("Button4").onclick = function() {slide('Dragon Curve',500)};
 document.getElementById("Button5").onclick = function() {slide('Complex Functions',500)};
