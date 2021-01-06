@@ -2,8 +2,8 @@ var canvas = document.querySelector('canvas');
 
 var scale_constant = 20;
 var fade_num = 30;
-var start_colour = [255,0,255];
-var end_colour = [85,0,85];
+var start_colour = [255,0,0];
+var end_colour = [00,0,80];
 var dot_num = 6;
 var spin_radius = parseInt((innerHeight + innerWidth)/(scale_constant)) * (1/10);
 var dot_radius = parseInt((innerHeight + innerWidth)/(scale_constant)) * (1/50);
