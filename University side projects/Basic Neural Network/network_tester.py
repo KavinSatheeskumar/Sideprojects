@@ -16,16 +16,16 @@ def XOR():
         example = [[random.randint(0,1),random.randint(0,1)]]
         example.append([example[0][0] ^ example[0][1]])
 
-        xor.evaluate(example[0])
+        output = xor.evaluate(example[0])
 
-        if abs(xor.layers[-1][0] - example[1][0]) < 0.5:
+        if abs(output[0] - example[1][0]) < 0.5:
             success_tally += 1
 
     print("The success rate of the network at computing the XOR operation was: " + str(success_tally/100))
 
 def tic_tac_toe():
 
-    ttt = NeuralNetwork.Network([9,5,1],0.1)
+    ttt = NeuralNetwork.Network([9,5,1],0.5)
 
     for x in range(100000):
         example = []
@@ -95,11 +95,10 @@ def tic_tac_toe():
         else:
             example.append([0])
 
-
-        ttt.evaluate(example[0])
-        if ((ttt.layers[-1][0] >= 0.5) and (example[1][0] == 1)):
+        output = ttt.evaluate(example[0])
+        if ((output[0] >= 0.5) and (example[1][0] == 1)):
             success_tally += 1
-        elif ((ttt.layers[-1][0] <= 0.5) and (example[1][0] == 0)):
+        elif ((output[0] <= 0.5) and (example[1][0] == 0)):
             success_tally += 1
 
     print("The success rate of the network was at evaluating a tic tac toe board: " + str(success_tally/100))
