@@ -35,6 +35,8 @@ class Network:
             self.z_layers[i+1] = add_vec(matrix_mult(self.webbs[i],self.layers[i]), self.biases[i])
             self.layers[i+1] = sigmoid(self.z_layers[i+1])
 
+        return (self.layers[-1])
+
     #This function has brought me so much pain...
     def train(self,example):
         self.evaluate(example[0])
