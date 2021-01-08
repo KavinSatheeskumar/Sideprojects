@@ -5,6 +5,7 @@ body{
 	margin:0px;
 	height:100%;
 	text-align:right;
+	background-color:#333;
 }
 .project{
 	position:relative;
@@ -26,12 +27,12 @@ body{
 	padding-bottom:10px;
 }
 .name{
-	color:#900;
+	color:#f00;
 	font-family:"Agency FB";
 	text-decoration-line:underline;
 }
 .description{
-	color:#333;
+	color:#ddd;
 	font-family:"Agency FB";
 	width:70%;
 	margin-left:auto;
@@ -62,14 +63,12 @@ body{
 }
 #disclaimer{
 	position:relative;
-	color:white;
 	top:35%;
 	left:50%;
 	transform:translate(-50%,0%);
 	width:50%;
-	background:#333;
+	color:#ddd;
 	text-align:center;
-	border:2px solid #fff;
 	margin:20px;
 	font-family:"Agency FB";
 	z-index:-1;
