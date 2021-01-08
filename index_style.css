@@ -38,6 +38,9 @@ body{
 	margin-right:auto;
 	border-collapse: collapse;
 }
+.menu td{
+	width:30%;
+}
 .link{
 	font-family:"Agency FB";
 	font-size:20px;
