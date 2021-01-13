@@ -83,20 +83,7 @@ body{
 	background-color:white;
 	color:#909;
 }
-code{
-	text-align:left;
-}
-#NeuralNetworkCode{
-	margin:0px;
-	padding:0px;
-	position:relative;
-	left:50%;
-	transform:translate(-50%,0);
-}
-#NeuralNetworkCode th{
-	color:#f0f;
-	font-family:"Agency FB";
-	text-decoration-line:underline;
-	text-align:left;
-	vertical-align:bottom;
+#KuriusVideo{
+	width:100%;
+	padding-top:56.25%;
 }
