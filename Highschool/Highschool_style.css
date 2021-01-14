@@ -15,7 +15,6 @@ body{
 	width:90%;
 	text-align:center;
 	margin:20px;
-	z-index:-1;
 }
 .project img{
 	width:30%;
@@ -53,6 +52,7 @@ body{
 	margin:0px;
 	font-family:"Agency FB";
 	position:fixed;
+	z-index:1;
 }
 #menu_items td{
 	margin:0px;
